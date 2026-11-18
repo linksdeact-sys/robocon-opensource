@@ -1,3 +1,5 @@
+const catalogUpdated = '2026-11-18';
+
 const catalog = [
 ['2026','南华大学','衡山Π战队 · 串联四足与主赛机器人',[
 ['四足机器人 RL 训练','https://github.com/uwvwko-zzz/uw-himloco','基于 HIMLoco 修改的强化学习框架。'],
@@ -42,6 +44,8 @@ const catalog = [
 ['auto_serial_bridge','https://github.com/ConQU2026/auto_serial_bridge','使用 YAML 定义 ROS 2 与 MCU 协议，编译时生成两端代码。ROS 端自动转换话题与串口帧，MCU 端提供 protocol.h、protocol.c 和 PROTOCOL_DOC.md。支持协议哈希握手、心跳、断线重连及可选 ACK 超时重传。']]],
 ['2026','广白','',[
 ['硬件开源','https://oshwhub.com/i-havent-thought-about-it-for-th/project_otiaiqxg']]],
+['2026','桂林航天工业学院','桂航',[
+['DM02_control 电机驱动库','https://github.com/heartpain-kong/DM02_control','面向 Robocon 与 RoboMaster 常用电机，包含宇树、DMA、灵足、达妙、大疆的电机驱动库，以及大疆遥控器控制例程。']]],
 ['2027','南华大学','衡山Π战队 · 场地仿真',[
 ['狗赛地图','https://github.com/uwvwko-zzz/27rc-dog-race'],
 ['主赛道地图','https://github.com/jimi4-lei/gazebo_models']]],

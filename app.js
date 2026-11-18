@@ -79,6 +79,10 @@ for (const filter of filters) {
 }
 search.addEventListener('input', render);
 
+const updated = document.querySelector('#catalog-updated');
+updated.dateTime = catalogUpdated;
+updated.textContent = catalogUpdated;
+
 document.querySelector('#stats').append(
   element('span', new Set(catalog.map(entry => entry[1])).size + ' 所高校'),
   element('span', catalog.reduce((sum, entry) => sum + entry[3].length, 0) + ' 条资源')

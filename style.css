@@ -75,7 +75,8 @@ h2 { margin: 0; font-size: clamp(27px, 4vw, 44px); letter-spacing: -.045em; }
 .filters button, #copy { border: 1px solid var(--line); background: #fffefa; padding: 9px 15px; border-radius: 7px; font-size: 14px; font-weight: 650; }
 .filters button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--accent); }
 .filters button:hover, #copy:hover { border-color: #438157; }
-#status, .subtitle, .resource p, .footer p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.updated, #status, .subtitle, .resource p, .footer p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.updated { margin: 5px 0 0; }
 #status { margin: 14px 0 25px; }
 .group + .group { margin-top: 40px; }
 .group-title { margin: 0 0 13px; padding: 0 0 10px; border-bottom: 1px solid var(--line); font-size: 19px; }
