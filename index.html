@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="个人整理的高校 Robocon 开源目录（非官方），收录 2026、2027 赛季工程与学习文档。">
+  <meta name="theme-color" content="#f4f3ed">
+  <title>Robocon 开源 · 个人收集</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="top"><div class="wrap bar">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">RC</span> Robocon 开源 · 个人收集</a>
+    <a class="contact" href="#contact">补充资源 <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="intro">
+        <p class="eyebrow"><span></span> ROBOCON OPEN SOURCE</p>
+        <h1>机器人的<br>开源档案<span>。</span></h1>
+        <p class="lead">本站由个人整理，为非官方资源目录，收录各高校分享的机器人代码、硬件设计、仿真工程和学习文档。</p>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="drawing" aria-hidden="true">
+        <span class="drawing-label">ROBOCON / 2026–2027</span>
+        <div class="orbit outer"></div><div class="orbit inner"></div>
+        <div class="machine"><i></i><i></i><i></i><i></i><b>RC</b></div>
+        <span class="drawing-bottom">+&nbsp; OPEN SOURCE ARCHIVE</span>
+      </div>
+    </section>
+    <section class="directory" aria-labelledby="directory-title">
+      <div class="directory-header">
+        <h2 id="directory-title">资源目录</h2>
+        <label class="search"><span aria-hidden="true"></span><input type="search" id="search" placeholder="搜索学校、项目或关键词" aria-label="搜索学校、项目或关键词"></label>
+      </div>
+      <div class="filters" role="group" aria-label="资源分类">
+        <button data-filter="all" aria-pressed="true">全部</button>
+        <button data-filter="2026" aria-pressed="false">2026 工程</button>
+        <button data-filter="2027" aria-pressed="false">2027 工程</button>
+        <button data-filter="docs" aria-pressed="false">学习文档</button>
+      </div>
+      <p id="status" role="status"></p>
+      <div id="results"></div>
+      <noscript>请启用 JavaScript 以浏览资源目录。</noscript>
+    </section>
+  </main>
+  <footer id="contact"><div class="wrap footer">
+    <div><strong>补充资源</strong><p>学校按收录时间排序，有遗漏欢迎联系补充。</p></div>
+    <button id="copy" type="button">复制 QQ · 2478920603</button>
+    <span id="copy-status" role="status"></span>
+  </div></footer>
+</body>
+</html>
