@@ -5,161 +5,180 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="个人整理的高校 Robocon 开源目录（非官方），收录 2026、2027 赛季工程与学习文档。">
   <meta name="theme-color" content="#F5F5F7">
-  <title>Robocon 开源目录 · 高校机器人工程档案</title>
+  <title>Robocon 开源档案 Pro · Apple Liquid Glass</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./data.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">跳至主要内容</a>
   <div id="ios-toast" class="ios-toast" role="status" aria-live="polite"></div>
 
-  <header class="apple-nav">
-    <div class="shell nav-row">
-      <a class="nav-brand" href="./">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="7" width="18" height="12" rx="4"/>
-            <circle cx="9" cy="13" r="1.5" fill="currentColor" stroke="none"/>
-            <circle cx="15" cy="13" r="1.5" fill="currentColor" stroke="none"/>
-            <path d="M12 3v4M8 19v2M16 19v2"/>
-          </svg>
-        </span>
-        <span class="brand-name">Robocon 开源</span>
-      </a>
+  <header class="glass-header">
+    <div class="shell">
+      <div class="glass-dock">
+        <a class="dock-brand" href="./">
+          <span class="brand-squircle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="7" width="18" height="12" rx="4"/>
+              <circle cx="9" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+              <circle cx="15" cy="13" r="1.5" fill="currentColor" stroke="none"/>
+              <path d="M12 3v4M8 19v2M16 19v2"/>
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Robocon 开源</strong>
+            <span class="pro-tag">PRO</span>
+          </span>
+        </a>
 
-      <nav class="nav-center" aria-label="站内导航">
-        <a href="#rules">比赛规则</a>
-        <a href="#catalog">开源目录</a>
-        <a href="#contact">贡献收录</a>
-      </nav>
+        <nav class="dock-nav" aria-label="主导航">
+          <a href="#rules" class="dock-link">比赛规则</a>
+          <a href="#catalog" class="dock-link">开源目录</a>
+          <a href="#contact" class="dock-link">提交收录</a>
+        </nav>
 
-      <div class="nav-right">
-        <button type="button" id="nav-search-btn" class="nav-pill-search" aria-label="聚焦搜索框">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="7"/>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-          <span>搜索</span>
-          <kbd>/</kbd>
-        </button>
+        <div class="dock-controls">
+          <button type="button" id="open-spotlight" class="dock-search-btn" aria-label="打开全局快速检索">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <span class="dock-search-text">快速检索</span>
+            <kbd aria-hidden="true">⌘K</kbd>
+          </button>
 
-        <button type="button" id="theme-toggle" class="nav-icon-btn" aria-label="切换浅色或深色外观" title="切换外观">
-          <svg class="ico-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-          </svg>
-          <svg class="ico-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
+          <button type="button" id="theme-toggle" class="dock-icon-btn" aria-label="切换浅色或深色外观" aria-pressed="false" title="切换外观">
+            <svg class="ico-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="ico-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- A. Apple Editorial Hero -->
+  <main id="main-content">
+    <!-- A. Hero -->
     <section class="hero">
-      <div class="hero-aura" aria-hidden="true"></div>
-      <div class="shell hero-inner">
-        <div class="hero-eyebrow">
-          <span class="live-dot"></span>第 26 届 · 2026–2027 赛季社区归档 · 更新于 <time id="catalog-updated"></time>
+      <div class="hero-mesh" aria-hidden="true"></div>
+      <div class="shell hero-wrap">
+        <div class="hero-pill">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>第 26 届 · 2026–2027 赛季社区开源索引 · 更新于 <time id="catalog-updated"></time></span>
         </div>
-        <h1>全国高校 Robocon<br><span>开源工程档案</span></h1>
-        <p class="hero-sub">一站式检索各高校战队公开的强化学习四足、ROS 2 自主导航、STM32 下位机、立创开源硬件与 Gazebo 仿真场地。</p>
 
-        <label class="spotlight-bar">
-          <svg class="spot-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <h1>全国高校 Robocon<br><span>开源工程档案</span></h1>
+
+        <p class="hero-lead">面向参赛战队的非官方工程检索中心。涵盖强化学习四足、ROS 2 自主导航、STM32 / FDCAN 下位机、立创开源 PCB 与 Gazebo 仿真场地。</p>
+
+        <label class="hero-search" for="search">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="11" cy="11" r="7"/>
             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
-          <input type="search" id="search" placeholder="搜索高校、战队、ROS 2、四足、FOC、Gazebo..." aria-label="搜索学校、项目或关键词" autocomplete="off">
-          <button type="button" id="search-clear" class="search-clear-btn" aria-label="清空搜索" hidden>×</button>
-          <kbd class="spot-kbd" aria-hidden="true">/</kbd>
+          <input type="search" id="search" placeholder="筛选高校、战队、ROS 2、四足、FOC、Gazebo..." autocomplete="off">
+          <button type="button" id="search-clear" class="clear-btn" aria-label="清空搜索词" hidden>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+          <button type="button" id="hero-cmd-btn" class="cmd-trigger" aria-label="打开全局命令面板">⌘K</button>
         </label>
 
-        <div id="hero-metrics" class="metrics-strip"></div>
+        <!-- Apple Storage-Style Breakdown Card -->
+        <div class="overview-card">
+          <div class="overview-kpis" id="hero-kpis"></div>
+          <div class="storage-bar" id="storage-bar" role="group" aria-label="按平台分布筛选"></div>
+          <div class="storage-legend" id="storage-legend"></div>
+        </div>
       </div>
     </section>
 
-    <!-- B. App Store "Today" Editorial Rulebooks -->
-    <section id="rules" class="rules-section" aria-labelledby="rules-title">
+    <!-- B. Official Rulebooks Bento -->
+    <section id="rules" class="section-block" aria-labelledby="rules-title">
       <div class="shell">
-        <div class="sec-head">
+        <div class="section-header">
           <div>
-            <span class="sec-kicker">2027 SEASON · RULEBOOKS</span>
+            <span class="kicker">2027 SEASON · RULEBOOKS</span>
             <h2 id="rules-title">官方比赛规则</h2>
           </div>
-          <span class="sec-note">点击版本胶囊直接查阅 PDF</span>
+          <p class="section-hint">第 26 届 ROBOCON 全赛道规则 PDF，点击版本号直接阅读</p>
         </div>
 
-        <div class="story-grid">
-          <article class="story-card story-blue">
-            <svg class="story-art" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+        <div class="rules-grid">
+          <article class="story-card tone-ocean">
+            <svg class="story-motif" viewBox="0 0 240 240" fill="none" aria-hidden="true">
               <circle cx="190" cy="50" r="110" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.22"/>
               <circle cx="190" cy="50" r="76" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.28"/>
               <circle cx="190" cy="50" r="42" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.35"/>
             </svg>
-            <div class="story-top">
+            <div class="story-head">
               <span class="story-tag">MAIN TRACK · 5 VERSIONS</span>
               <h3>主赛道 · 女娲补天</h3>
               <p>第 26 届竞技赛与技能挑战赛历代规则书全收录</p>
             </div>
-            <div class="story-dock">
-              <div class="dock-row">
-                <span class="dock-label">竞技赛</span>
-                <div class="dock-pills">
-                  <a class="pdf-pill is-latest" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E7%AB%9E%E6%8A%80%E8%B5%9B%E8%A7%84%E5%88%99V3.pdf" target="_blank" rel="noopener">V3 <em>最新</em></a>
-                  <a class="pdf-pill" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E7%AB%9E%E6%8A%80%E8%B5%9B%E8%A7%84%E5%88%99V2.pdf" target="_blank" rel="noopener">V2</a>
-                  <a class="pdf-pill" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E7%AB%9E%E6%8A%80%E8%B5%9B%E8%A7%84%E5%88%99V1.pdf" target="_blank" rel="noopener">V1</a>
+            <div class="story-tray">
+              <div class="tray-row">
+                <span class="tray-label">竞技赛</span>
+                <div class="tray-pills">
+                  <a class="ver-pill is-latest" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E7%AB%9E%E6%8A%80%E8%B5%9B%E8%A7%84%E5%88%99V3.pdf" target="_blank" rel="noopener">V3 <span class="latest-dot">最新</span></a>
+                  <a class="ver-pill" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E7%AB%9E%E6%8A%80%E8%B5%9B%E8%A7%84%E5%88%99V2.pdf" target="_blank" rel="noopener">V2</a>
+                  <a class="ver-pill" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E7%AB%9E%E6%8A%80%E8%B5%9B%E8%A7%84%E5%88%99V1.pdf" target="_blank" rel="noopener">V1</a>
                 </div>
               </div>
-              <div class="dock-row">
-                <span class="dock-label">技能赛</span>
-                <div class="dock-pills">
-                  <a class="pdf-pill is-latest" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E6%8A%80%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%E8%A7%84%E5%88%99V2.pdf" target="_blank" rel="noopener">V2 <em>最新</em></a>
-                  <a class="pdf-pill" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E6%8A%80%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%E8%A7%84%E5%88%99V1.pdf" target="_blank" rel="noopener">V1</a>
+              <div class="tray-row">
+                <span class="tray-label">技能赛</span>
+                <div class="tray-pills">
+                  <a class="ver-pill is-latest" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E6%8A%80%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%E8%A7%84%E5%88%99V2.pdf" target="_blank" rel="noopener">V2 <span class="latest-dot">最新</span></a>
+                  <a class="ver-pill" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9B%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9%E6%8A%80%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%E8%A7%84%E5%88%99V1.pdf" target="_blank" rel="noopener">V1</a>
                 </div>
               </div>
             </div>
           </article>
 
-          <article class="story-card story-green">
-            <svg class="story-art" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+          <article class="story-card tone-emerald">
+            <svg class="story-motif" viewBox="0 0 240 240" fill="none" aria-hidden="true">
               <path d="M120 30 L195 75 L160 155 L210 205" stroke="currentColor" stroke-width="1.8" stroke-opacity="0.28" stroke-linecap="round" stroke-linejoin="round"/>
               <circle cx="195" cy="75" r="8" stroke="currentColor" stroke-width="1.8" stroke-opacity="0.35"/>
               <circle cx="160" cy="155" r="8" stroke="currentColor" stroke-width="1.8" stroke-opacity="0.35"/>
             </svg>
-            <div class="story-top">
+            <div class="story-head">
               <span class="story-tag">BIONIC LEGGED · 2 VERSIONS</span>
               <h3>足式机器人挑战赛</h3>
               <p>仿生四足与轮足竞速、越野及障碍挑战赛</p>
             </div>
-            <div class="story-dock">
-              <div class="dock-row">
-                <span class="dock-label">规则书</span>
-                <div class="dock-pills">
-                  <a class="pdf-pill is-latest" href="./docs/2027%E5%B9%B4%E8%B6%B3%E5%BC%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%91%E6%88%98%E8%B5%9B-V2.0.pdf2027%E5%B9%B4%E8%B6%B3%E5%BC%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%91%E6%88%98%E8%B5%9B-V2.0.pdf" target="_blank" rel="noopener">V2.0 <em>最新</em></a>
-                  <a class="pdf-pill" href="./docs/2027%E5%B9%B4%E8%B6%B3%E5%BC%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%91%E6%88%98%E8%B5%9B-V1.0.pdf" target="_blank" rel="noopener">V1.0</a>
+            <div class="story-tray">
+              <div class="tray-row">
+                <span class="tray-label">规则书</span>
+                <div class="tray-pills">
+                  <a class="ver-pill is-latest" href="./docs/2027%E5%B9%B4%E8%B6%B3%E5%BC%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%91%E6%88%98%E8%B5%9B-V2.0.pdf2027%E5%B9%B4%E8%B6%B3%E5%BC%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%91%E6%88%98%E8%B5%9B-V2.0.pdf" target="_blank" rel="noopener">V2.0 <span class="latest-dot">最新</span></a>
+                  <a class="ver-pill" href="./docs/2027%E5%B9%B4%E8%B6%B3%E5%BC%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%91%E6%88%98%E8%B5%9B-V1.0.pdf" target="_blank" rel="noopener">V1.0</a>
                 </div>
               </div>
             </div>
           </article>
 
-          <article class="story-card story-orange">
-            <svg class="story-art" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+          <article class="story-card tone-sunset">
+            <svg class="story-motif" viewBox="0 0 240 240" fill="none" aria-hidden="true">
               <path d="M30 185 Q 130 15 225 140" stroke="currentColor" stroke-width="1.8" stroke-dasharray="5 5" stroke-opacity="0.3"/>
               <circle cx="172" cy="78" r="26" stroke="currentColor" stroke-width="1.6" stroke-opacity="0.32"/>
             </svg>
-            <div class="story-top">
+            <div class="story-head">
               <span class="story-tag">VOLLEYBALL · 1 VERSION</span>
               <h3>排球 · 沙排之王</h3>
               <p>全向移动底盘接发球与多机构协同对抗赛</p>
             </div>
-            <div class="story-dock">
-              <div class="dock-row">
-                <span class="dock-label">规则书</span>
-                <div class="dock-pills">
-                  <a class="pdf-pill is-latest" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9BROBOCON%E6%B2%99%E6%8E%92%E4%B9%8B%E7%8E%8B%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99V1%281%29.pdf" target="_blank" rel="noopener">V1 <em>最新</em></a>
+            <div class="story-tray">
+              <div class="tray-row">
+                <span class="tray-label">规则书</span>
+                <div class="tray-pills">
+                  <a class="ver-pill is-latest" href="./docs/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%B5%9BROBOCON%E6%B2%99%E6%8E%92%E4%B9%8B%E7%8E%8B%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99V1%281%29.pdf" target="_blank" rel="noopener">V1 <span class="latest-dot">最新</span></a>
                 </div>
               </div>
             </div>
@@ -168,28 +187,52 @@
       </div>
     </section>
 
-    <!-- C. iPadOS Split-View Directory -->
-    <section id="catalog" class="catalog-section" aria-labelledby="directory-title">
+    <!-- C. iPadOS Split-View Catalog -->
+    <section id="catalog" class="section-block catalog-section" aria-labelledby="directory-title">
       <div class="shell">
-        <div class="catalog-head">
+        <div class="section-header catalog-header">
           <div>
-            <span class="sec-kicker">OPEN SOURCE DIRECTORY</span>
+            <span class="kicker">OPEN SOURCE DIRECTORY</span>
             <h2 id="directory-title">开源资源目录</h2>
+            <p id="status" class="section-hint" role="status" aria-live="polite">正在加载目录...</p>
           </div>
-          <div class="catalog-meta-bar">
-            <span id="status" class="status-text" role="status">正在加载目录...</span>
-            <button type="button" id="reset-filters" class="ios-link-btn danger" hidden>重置筛选</button>
-            <button type="button" id="toggle-all" class="ios-link-btn">全部收起</button>
+
+          <div class="catalog-tools">
+            <div class="view-seg" role="group" aria-label="展示视图切换">
+              <button type="button" data-view="grouped" aria-pressed="true">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="8" y1="6" x2="21" y2="6"/>
+                  <line x1="8" y1="12" x2="21" y2="12"/>
+                  <line x1="8" y1="18" x2="21" y2="18"/>
+                  <line x1="3" y1="6" x2="3.01" y2="6"/>
+                  <line x1="3" y1="12" x2="3.01" y2="12"/>
+                  <line x1="3" y1="18" x2="3.01" y2="18"/>
+                </svg>
+                <span>按高校</span>
+              </button>
+              <button type="button" data-view="cards" aria-pressed="false">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                  <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                  <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+                  <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                </svg>
+                <span>卡片流</span>
+              </button>
+            </div>
+
+            <button type="button" id="reset-filters" class="tool-pill danger" hidden>重置筛选</button>
+            <button type="button" id="toggle-all" class="tool-pill">全部收起</button>
           </div>
         </div>
 
-        <div class="split-layout">
-          <aside class="ios-sidebar" aria-label="目录筛选边栏">
-            <div class="sidebar-group">
-              <div class="sidebar-title">按赛季与类型</div>
-              <div class="sidebar-list" role="group" aria-label="资源分类">
-                <button type="button" class="sb-item" data-filter="all" aria-pressed="true">
-                  <span class="sb-ico sb-ico-blue" aria-hidden="true">
+        <div class="split-view">
+          <aside class="sidebar" aria-label="目录筛选边栏">
+            <div class="sb-card">
+              <div class="sb-heading">浏览视图</div>
+              <div class="sb-list" role="group" aria-label="按分类筛选">
+                <button type="button" class="sb-btn" data-filter="all" aria-pressed="true">
+                  <span class="sb-ico ico-blue" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <rect x="3" y="3" width="7" height="7" rx="1.5"/>
                       <rect x="14" y="3" width="7" height="7" rx="1.5"/>
@@ -197,99 +240,170 @@
                       <rect x="3" y="14" width="7" height="7" rx="1.5"/>
                     </svg>
                   </span>
-                  <span class="sb-label">全部开源</span>
-                  <span class="sb-count" data-count-filter="all"></span>
+                  <span class="sb-text">全部开源</span>
+                  <span class="sb-badge" data-count-filter="all"></span>
                 </button>
 
-                <button type="button" class="sb-item" data-filter="2026" aria-pressed="false">
-                  <span class="sb-ico sb-ico-indigo" aria-hidden="true">
+                <button type="button" class="sb-btn" data-filter="starred" aria-pressed="false">
+                  <span class="sb-ico ico-gold" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </span>
+                  <span class="sb-text">我的收藏</span>
+                  <span class="sb-badge" data-count-filter="starred">0</span>
+                </button>
+
+                <button type="button" class="sb-btn" data-filter="2026" aria-pressed="false">
+                  <span class="sb-ico ico-indigo" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <rect x="5" y="5" width="14" height="14" rx="2"/>
                       <rect x="9" y="9" width="6" height="6"/>
                       <path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>
                     </svg>
                   </span>
-                  <span class="sb-label">2026 赛季工程</span>
-                  <span class="sb-count" data-count-filter="2026"></span>
+                  <span class="sb-text">2026 赛季工程</span>
+                  <span class="sb-badge" data-count-filter="2026"></span>
                 </button>
 
-                <button type="button" class="sb-item" data-filter="2027" aria-pressed="false">
-                  <span class="sb-ico sb-ico-green" aria-hidden="true">
+                <button type="button" class="sb-btn" data-filter="2027" aria-pressed="false">
+                  <span class="sb-ico ico-green" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                       <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
                       <line x1="12" y1="22.08" x2="12" y2="12"/>
                     </svg>
                   </span>
-                  <span class="sb-label">2027 场地仿真</span>
-                  <span class="sb-count" data-count-filter="2027"></span>
+                  <span class="sb-text">2027 场地仿真</span>
+                  <span class="sb-badge" data-count-filter="2027"></span>
                 </button>
 
-                <button type="button" class="sb-item" data-filter="docs" aria-pressed="false">
-                  <span class="sb-ico sb-ico-orange" aria-hidden="true">
+                <button type="button" class="sb-btn" data-filter="docs" aria-pressed="false">
+                  <span class="sb-ico ico-orange" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
                       <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
                     </svg>
                   </span>
-                  <span class="sb-label">学习路线与文档</span>
-                  <span class="sb-count" data-count-filter="docs"></span>
+                  <span class="sb-text">学习路线与文档</span>
+                  <span class="sb-badge" data-count-filter="docs"></span>
                 </button>
               </div>
             </div>
 
-            <div class="sidebar-group">
-              <div class="sidebar-title">按托管平台</div>
-              <div class="sidebar-list" id="platform-filters" role="group" aria-label="托管平台">
-                <button type="button" class="sb-item" data-platform="all" aria-pressed="true">
-                  <span class="sb-label">全部来源</span>
-                  <span class="sb-count" data-count-platform="all"></span>
+            <div class="sb-card">
+              <div class="sb-heading">按技术方向</div>
+              <div class="sb-list" id="domain-filters" role="group" aria-label="按技术方向筛选">
+                <button type="button" class="sb-btn" data-domain="all" aria-pressed="true">
+                  <span class="sb-text">全部方向</span>
+                  <span class="sb-badge" data-count-domain="all"></span>
                 </button>
-                <button type="button" class="sb-item" data-platform="GitHub" aria-pressed="false">
-                  <span class="sb-label">GitHub 仓库</span>
-                  <span class="sb-count" data-count-platform="GitHub"></span>
+                <button type="button" class="sb-btn" data-domain="rl" aria-pressed="false">
+                  <span class="sb-text">强化学习 · 足式</span>
+                  <span class="sb-badge" data-count-domain="rl"></span>
                 </button>
-                <button type="button" class="sb-item" data-platform="立创开源" aria-pressed="false">
-                  <span class="sb-label">立创开源硬件</span>
-                  <span class="sb-count" data-count-platform="立创开源"></span>
+                <button type="button" class="sb-btn" data-domain="ros" aria-pressed="false">
+                  <span class="sb-text">ROS 2 · 算法</span>
+                  <span class="sb-badge" data-count-domain="ros"></span>
                 </button>
-                <button type="button" class="sb-item" data-platform="飞书文档" aria-pressed="false">
-                  <span class="sb-label">飞书知识库</span>
-                  <span class="sb-count" data-count-platform="飞书文档"></span>
+                <button type="button" class="sb-btn" data-domain="mcu" aria-pressed="false">
+                  <span class="sb-text">嵌入式 · 驱控</span>
+                  <span class="sb-badge" data-count-domain="mcu"></span>
                 </button>
-                <button type="button" class="sb-item" data-platform="论坛 / 博客" aria-pressed="false">
-                  <span class="sb-label">社区与技术博客</span>
-                  <span class="sb-count" data-count-platform="论坛 / 博客"></span>
+                <button type="button" class="sb-btn" data-domain="hw" aria-pressed="false">
+                  <span class="sb-text">开源硬件 PCB</span>
+                  <span class="sb-badge" data-count-domain="hw"></span>
+                </button>
+                <button type="button" class="sb-btn" data-domain="sim" aria-pressed="false">
+                  <span class="sb-text">场地仿真</span>
+                  <span class="sb-badge" data-count-domain="sim"></span>
+                </button>
+                <button type="button" class="sb-btn" data-domain="docs" aria-pressed="false">
+                  <span class="sb-text">教程与机械设计</span>
+                  <span class="sb-badge" data-count-domain="docs"></span>
                 </button>
               </div>
             </div>
 
-            <div class="sidebar-group sidebar-schools">
-              <div class="sidebar-title">按高校索引 <span id="school-count-badge" class="sb-title-badge"></span></div>
-              <div class="sidebar-list school-list-scroll" id="school-jumper"></div>
+            <div class="sb-card">
+              <div class="sb-heading">按托管平台</div>
+              <div class="sb-list" id="platform-filters" role="group" aria-label="按平台筛选">
+                <button type="button" class="sb-btn" data-platform="all" aria-pressed="true">
+                  <span class="sb-text">全部来源</span>
+                  <span class="sb-badge" data-count-platform="all"></span>
+                </button>
+                <button type="button" class="sb-btn" data-platform="GitHub" aria-pressed="false">
+                  <span class="sb-text">GitHub 仓库</span>
+                  <span class="sb-badge" data-count-platform="GitHub"></span>
+                </button>
+                <button type="button" class="sb-btn" data-platform="立创开源" aria-pressed="false">
+                  <span class="sb-text">立创开源硬件</span>
+                  <span class="sb-badge" data-count-platform="立创开源"></span>
+                </button>
+                <button type="button" class="sb-btn" data-platform="飞书文档" aria-pressed="false">
+                  <span class="sb-text">飞书知识库</span>
+                  <span class="sb-badge" data-count-platform="飞书文档"></span>
+                </button>
+                <button type="button" class="sb-btn" data-platform="论坛 / 博客" aria-pressed="false">
+                  <span class="sb-text">社区与技术博客</span>
+                  <span class="sb-badge" data-count-platform="论坛 / 博客"></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="sb-card sb-schools">
+              <div class="sb-heading">
+                <span>按高校索引</span>
+                <span id="school-count-badge" class="sb-subcount"></span>
+              </div>
+              <div class="sb-list sb-scroll" id="school-jumper"></div>
             </div>
           </aside>
 
           <div class="catalog-stage">
+            <div id="active-filter-pills" class="active-pills" hidden></div>
             <div id="results"></div>
-            <noscript><p class="empty-card">请启用 JavaScript 以浏览开源资源目录。</p></noscript>
+            <noscript><div class="empty-state">请启用 JavaScript 以浏览开源资源目录。</div></noscript>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="apple-footer">
+  <footer id="contact" class="site-footer">
     <div class="shell">
-      <div class="footer-surface">
-        <div class="footer-copy">
-          <h3>补充开源仓库或纠错</h3>
-          <p>本站由个人整理维护，为非官方资源索引。各高校按收录时间排序，欢迎提交新开源的机器人工程、PCB 硬件或学习文档。</p>
+      <div class="footer-card">
+        <div class="footer-text">
+          <span class="kicker">COMMUNITY ARCHIVE</span>
+          <h3>补充开源项目或反馈纠错</h3>
+          <p>本站由个人整理维护，为非官方 Robocon 社区资源目录。高校按收录时间排序，欢迎提交开源代码、硬件工程或学习笔记。</p>
         </div>
-        <button id="copy" type="button" class="apple-cta">复制维护者 QQ · 2478920603</button>
+        <div class="footer-cta-group">
+          <button id="copy" type="button" class="btn-primary">复制维护者 QQ · 2478920603</button>
+        </div>
       </div>
-      <div class="footer-legal">ROBOCON Open Source Archive · Non-Official Community Directory</div>
+      <p class="footer-meta">ROBOCON Open Source Archive · Pro Edition · Non-Official Community Index</p>
     </div>
   </footer>
+
+  <!-- Native <dialog> Apple Spotlight Command Palette -->
+  <dialog id="spotlight-dialog" class="spotlight-modal" aria-label="全局快速检索">
+    <div class="modal-surface">
+      <div class="modal-search-row">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" id="modal-search" placeholder="输入关键词搜索规则书、高校或开源工程..." autocomplete="off" aria-label="全局快速检索输入">
+        <button type="button" id="close-spotlight" class="modal-esc-btn" aria-label="关闭快速检索">ESC</button>
+      </div>
+      <div id="modal-results" class="modal-results" role="listbox" aria-label="检索结果"></div>
+      <div class="modal-footer-hint">
+        <span><kbd>↑</kbd><kbd>↓</kbd> 切换</span>
+        <span><kbd>Enter</kbd> 打开链接</span>
+        <span><kbd>ESC</kbd> 关闭</span>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>
